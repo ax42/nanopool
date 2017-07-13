@@ -19,7 +19,7 @@ f.close()
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', seconds=3600)
+#@sched.scheduled_job('interval', seconds=3600)
 def timed_job():
 	f = urllib2.urlopen('http://sxswdocumentary.com/nanopool.php?address=0xed13acce4d09d2af47eece5f0365fb1a80206353')
 	json_string = f.read()
