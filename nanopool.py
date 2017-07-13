@@ -1,8 +1,11 @@
+# written by futurehelp: circa 2017
+
 import urllib2
 import json
 import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
 
+#change address to your wallet address
 timeData = datetime.datetime.time(datetime.datetime.now())
 f = urllib2.urlopen('http://sxswdocumentary.com/nanopool.php?address=0xed13acce4d09d2af47eece5f0365fb1a80206353')
 json_string = f.read()
