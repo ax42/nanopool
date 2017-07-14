@@ -3,7 +3,10 @@
 import urllib2
 import json
 import datetime
+import logging
 from apscheduler.schedulers.blocking import BlockingScheduler
+
+logging.basicConfig()
 
 #change address to your wallet address
 timeData = datetime.datetime.time(datetime.datetime.now())
