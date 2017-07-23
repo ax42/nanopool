@@ -35,9 +35,5 @@ def timed_job():
 	fileHandle.close()
 	f.close()
 
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=10)
-def scheduled_job():
-    print('This job is run every weekday at 10am.')
-
 sched.add_job(timed_job, 'interval', hours=1)
 sched.start()
